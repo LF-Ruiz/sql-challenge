@@ -7,7 +7,7 @@ SELECT e.emp_no,e.last_name,e.first_name,e.sex,s.salary
 FROM employees e 
 LEFT JOIN salaries s 
 ON e.emp_no = s.emp_no
-ORDER BY last_name asc
+ORDER BY last_name asc, first_name;
 
 -- 2. List first name, last name, and hire date for employees who were hired in 1986.
     -- Check hire_date format
@@ -54,10 +54,12 @@ ORDER BY dept_name asc
 	
 -- 4. List the department of each employee with the following information:
 -- employee number, last name, first name, and department name.
+Select *
+from dept_manager
 
 SELECT e.emp_no,e.last_name,e.first_name,d.dept_name
 FROM employees e
-LEFT JOIN dept_manager dp
+LEFT JOIN dept_emp dp
 ON e.emp_no=dp.emp_no
 	LEFT JOIN departments d
 	ON dp.dept_no=d.dept_no
