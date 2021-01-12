@@ -44,3 +44,8 @@ dept_no in departments dataset is the primary key
 emp_no in employees dataset is the primary key
 The other four datasets are somehow related
 
+## Bonus
+https://github.com/LF-Ruiz/sql-challenge/blob/main/EmployeeSQL_Bonus.ipynb
+## Epilogue
+https://github.com/LF-Ruiz/sql-challenge/blob/main/epilogue.sql
+
