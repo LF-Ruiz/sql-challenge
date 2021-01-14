@@ -13,7 +13,7 @@ DROP TABLE IF EXISTS dept_emp
 -- Create a new table
 CREATE TABLE dept_emp (
 	emp_no INT,
-	dept_no VARCHAR
+	dept_no VARCHAR -- Foreign key departments.dept_no
 );
 
 -- drop if exists
